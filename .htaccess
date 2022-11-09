@@ -1,0 +1,18 @@
+<!-- AuthUserFile /home/users/0/sub.jp-s-tech/web/test/.htpasswd
+AuthName "Input your ID and Password."
+AuthType Basic
+require valid-user
+<Files ~ “^.(htpasswd|htaccess)$”>
+deny from all
+</Files> -->
+
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/gif "access plus 1 months"
+ExpiresByType image/jpeg "access plus 1 months"
+ExpiresByType image/png "access plus 1 months"
+ExpiresByType image/x-icon "access plus 6 months"
+ExpiresByType text/css "access plus 1 months"
+ExpiresByType text/javascript "access plus 1 months"
+ExpiresByType application/javascript "access plus 1 months"
+</IfModule>
